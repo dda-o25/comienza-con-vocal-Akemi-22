@@ -1,15 +1,23 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Akemi Clarissa Olvera Arao
+19/09/25
+Determinar si una palabra comienza con una vocal      
 """
 
 # Declaraciones
-CONSTANTE = valor
+VOCALES = ["A", "a", "E", "e", "I", "i", "O", "o", "U", "u"]
 
 # Entradas
-entrada = input()
+palabra = input("Ingrese una palabra: ")
 
-# Proceso
-
+# Proceso 
+inicial_vocal = False 
+for vocal in VOCALES:
+    if palabra[0] == vocal:
+        print(palabra, "empieza con una vocal")
+        inicial_vocal = True
+if inicial_vocal == False:
+    print(palabra, "no empieza con vocal")
 
 # Salidas
-print(salida)
+
